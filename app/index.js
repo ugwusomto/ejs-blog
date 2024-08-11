@@ -1,4 +1,6 @@
+
 const express = require("express");
+require('dotenv').config()
 const path = require("path");
 const app = express();
 const PORT = 3000
@@ -110,7 +112,8 @@ const blogPosts = [
     }
 ];
 
-
+//  DATABASE LEVEL - TABLES (EACH TABLE HAS COLUMNS)
+// CODE LEVEL  - DATABASE BECOME (MODELS) - A TABLE Becomes a MODEL -> Columns become (PROPERTIES)
 
 
 app.get("/", (req, res) => {
