@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node app/index.js",
+    "dev": "nodemon app/index.js",
     "db": "sudo /usr/local/mysql-8.3.0-macos14-arm64/bin/mysqld --user=root"
   },
   "keywords": [],
@@ -16,5 +16,8 @@
     "express": "^4.19.2",
     "mysql2": "^3.11.0",
     "sequelize": "^6.37.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
   }
 }

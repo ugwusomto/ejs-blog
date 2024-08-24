@@ -2,6 +2,7 @@
 const express = require("express");
 require('dotenv').config()
 const path = require("path");
+const {InitializeDB} = require("../app/database/init")
 const app = express();
 const PORT = 3000
 
@@ -124,6 +125,8 @@ app.get("/", (req, res) => {
     }
 })
 
+
+
 app.get("/post/:id", (req, res) => {
     try {
         const postId = req.params.id;
@@ -138,6 +141,7 @@ app.get("/post/:id", (req, res) => {
     }
 })
 
-app.listen(PORT, () => {
+app.listen(PORT, async() => {
+    await InitializeDB();
     console.log("Listening to PORT " + PORT);
 })

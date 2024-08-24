@@ -4,4 +4,8 @@ const Db = new Sequelize(process.env.DB_NAME, process.env.DB_USERNAME, process.e
     dialect: "mysql"
 });
 
+
+
+
+
 module.exports = {Db}

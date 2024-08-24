@@ -1,0 +1,7 @@
+-- Connect to our actual db
+-- Set up our controller 
+--  Set up our Service
+-- Write a query to create a user - manually 
+-- Write a query to create a post 
+-- Load the actual post we created in the frontend 
+-- Work on authentication and authorization

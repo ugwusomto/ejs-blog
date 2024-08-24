@@ -1,0 +1,5 @@
+- Write an sql statment 
+   that creates an ecommerce database called - ecome
+   Creates a 3 tables - user , product and order table 
+   put it in an sql file
+   set some import fields to unique 
