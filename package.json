@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon app/index.js",
-    "db": "sudo /usr/local/mysql-8.3.0-macos14-arm64/bin/mysqld --user=root"
+    "db": "sudo /usr/local/mysql-8.3.0-macos14-arm64/bin/mysqld --user=root",
+    "seed":"node app/seeder/index.seeder.js"
   },
   "keywords": [],
   "author": "",
